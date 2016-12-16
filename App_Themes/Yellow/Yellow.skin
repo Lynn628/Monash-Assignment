@@ -1,0 +1,9 @@
+﻿
+
+<asp:Calendar SkinID="CalendarView" runat="server" 
+            BackColor="White" BorderColor="#FFE4B5" 
+            TodayDayStyle-BackColor="#B0E0E6" TodayDayStyle-ForeColor="white">
+            <TitleStyle BackColor="#FFEC8B"/>
+            <SelectedDayStyle BackColor="#EED2EE" ForeColor="white"/>
+</asp:Calendar>
+

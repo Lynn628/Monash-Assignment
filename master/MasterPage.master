@@ -1,0 +1,117 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />--%>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/carousel.css" rel="stylesheet" />
+    <link href="~/css/my_style.css" rel="stylesheet" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar-wrapper">
+            <header class="header">
+                <div class="ctn">
+                    <div id="image-logo" class="logo">
+                        <h2></h2>
+                    </div>
+                    <nav class="menu-nav">
+                        <div id="menu-login" class="menu-utility">
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <AnonymousTemplate>
+                                    <ul>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Theme <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <asp:Button ID="button1" runat="server" Text="Original" SkinID="coloredSkin" OnClick="Set_Theme" CssClass="logout-btn" /></li>
+                                                <li>
+                                                    <asp:Button ID="button2" runat="server" Text="Yellow" SkinID="coloredSkin" OnClick="Set_Theme" CssClass="logout-btn" ForeColor="#c19857" /></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="login.aspx">Login</a></li>
+
+                                    </ul>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <ul>
+                                        <li>
+                                            <span>Welcome
+                                                <asp:LoginName ID="LoginUser" runat="server" />
+                                            </span>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Theme <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <asp:Button ID="button1" runat="server" Text="Original" SkinID="coloredSkin" OnClick="Set_Theme" CssClass="logout-btn" /></li>
+                                                <li>
+                                                    <asp:Button ID="button2" runat="server" Text="Yellow" SkinID="coloredSkin" OnClick="Set_Theme" CssClass="logout-btn" ForeColor="#c19857" /></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <asp:Button ID="LogOut" runat="server" Text="LogOut" OnClick="LogOut_Click" CssClass="logout-btn" /></li>
+
+                                    </ul>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </div>
+                        <div id="menu-main-navigation">
+                            <asp:Menu ID="menu1" runat="server" DataSourceID="SiteMapDS"
+                                StaticDisplayLevels="2" Orientation="Horizontal">
+                                <StaticMenuStyle CssClass="nav nav-pills" />
+                                <DynamicMenuStyle CssClass="dropdown-menu" />
+                            </asp:Menu>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div>
+            <asp:SiteMapDataSource ID="SiteMapDS" runat="server" SiteMapProvider="MySitemap" />
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+
+        <div class="container">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <span>Copyright © 2016 Yang Yan & Hanlin Huang</span>
+            <%--<span>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</span>--%>
+            <p>
+                <a href="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm">Disclaimer</a>|
+                <a href="./Acknowledge.aspx">Acknowledgement</a>|
+                <a href="mailto:yyan542@student.monash.edu">Email</a>
+            </p>
+            <span>
+                <a href="#">Back to top</a>
+            </span>
+        </footer>
+    </form>
+</body>
+</html>

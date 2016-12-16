@@ -1,0 +1,25 @@
+<!--  'timer' :: number of seconds between each image transition
+'order' :: how you want your images displayed. choose either 'sequential' or 'random'
+'looping' :: if the slide show is in sequential mode, this stops the show at the last image (use 'yes' for looping, 'no' for not)
+'fadeTime' :: velocity of image crossfade. Increment for faster fades, decrement for slower. Approximately equal to seconds.
+'xpos' :: _x position of all loaded clips (0 is default)
+'ypos' :: _y position of all loaded clips (0 is default)-->
+<gallery timer="10" order="sequential" fadetime="5" looping="yes" xpos="0" ypos="0">
+<image path="slideimages/01.png" />
+<image path="slideimages/02.png" />
+<image path="slideimages/03.png" />
+<image path="slideimages/04.png" />
+<image path="slideimages/05.png" />
+<image path="slideimages/06.png" />
+<image path="slideimages/07.png" />
+<image path="slideimages/08.png" />
+<image path="slideimages/09.png" />
+<image path="slideimages/10.png" />
+<image path="slideimages/11.png" />
+<image path="slideimages/12.png" />
+<image path="slideimages/13.png" />
+<image path="slideimages/14.png" />
+<image path="slideimages/15.png" />
+<image path="slideimages/16.png" />
+<image path="slideimages/17.png" />
+</gallery>

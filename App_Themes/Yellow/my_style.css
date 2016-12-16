@@ -1,0 +1,76 @@
+﻿
+
+#menu-login a {
+    color: #c19857;
+}
+
+
+#menu-main-navigation a {
+    color:#904a2f;
+    
+}
+
+#menu-main-navigation a:hover {
+    color:#DAA520;
+     
+}
+
+.Mybreadcrumb {
+    font-size: 15px;
+    color: #965a4f;
+    line-height: 22px;
+}
+
+#main a {
+    color: #1f9a9a;
+    text-decoration: underline;
+}
+
+#big-title h2 {
+    color:#8B4726;
+ 
+}
+
+#code h4 {
+    font-family: Garineldo;
+    font-size: 25px;
+    font-weight: bold;
+    color:#8B4726;
+
+}
+
+#main h4 {
+    font-family: Garineldo;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing:1px; 
+    color:#8B4726;
+}
+
+.sidebar-module-inset {
+  padding: 15px;
+  background-color:#FFFAF0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+
+.all-records {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.logout-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid transparent;
+}
+
+
+.footer a {
+    color: #904a2f;
+}
+
+.footer-s a {
+    color: #904a2f;
+}
